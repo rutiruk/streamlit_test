@@ -14,11 +14,11 @@ st.title("シフトスケジューリングアプリ")
 # サイドバー
 st.sidebar.header("データのアップロード")
 
-calendar_file = "data/calendar.csv"
-staff_file = "data/staff.csv"
+# calendar_file = "data/calendar.csv"
+# staff_file = "data/staff.csv"
 
-# calendar_file = st.sidebar.file_uploader("カレンダー", type=["csv"])
-# staff_file = st.sidebar.file_uploader("スタッフ情報", type=["csv"])
+calendar_file = st.sidebar.file_uploader("カレンダー", type=["csv"])
+staff_file = st.sidebar.file_uploader("スタッフ情報", type=["csv"])
 
 if calendar_file is not None:
     calendar_df = pd.read_csv(calendar_file)
